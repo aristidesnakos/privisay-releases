@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.03.05</title>
-      <pubDate>Thu, 05 Mar 2026 14:26:32 +0200</pubDate>
-      <sparkle:version>48</sparkle:version>
-      <sparkle:shortVersionString>2026.03.05</sparkle:shortVersionString>
+      <title>Version 2026.03.06</title>
+      <pubDate>Thu, 05 Mar 2026 15:42:35 +0200</pubDate>
+      <sparkle:version>51</sparkle:version>
+      <sparkle:shortVersionString>2026.03.06</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,20 +19,22 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.03.05</h3>
+        <h3>What's New in 2026.03.06</h3>
         <ul>
           <li>Expanded voice commands — 30+ new spoken formatting commands for hands-free text control:</li>
           <li>New line insertion — "new line" now creates an actual line break in all apps including browsers, VS Code, and Electron apps (previously sent a raw Unicode character that many apps ignored)</li>
           <li>Tab insertion — "tab" now sends a real Tab keypress for proper indentation</li>
+          <li>Whisper punctuation around voice commands — Whisper auto-inserts commas/periods around spoken commands (e.g. "Hello, new line. How are you?"); these are now stripped so you get clean output without stray punctuation</li>
+          <li>Soft line breaks — "new line" now sends Shift+Return (soft line break) keeping text as one continuous block rather than splitting into separate paragraphs</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.05/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.06/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="m0LjbgbL0S48kJwtZgiaG875DXEB0lNvpTSljUT4fFiSmy0g53nKXbxPtnhAQyjhYE4lH1FGX3XKsuJooVNGAw==" length="448561087"
+        sparkle:edSignature="38O5iyQriYU0I4772YhVVP0TX5hOvqQKc+DL6k/ixgmb85NLCrWQporUAZjU5Y3pwg5MbIMQ9bsxb5/D3cUKBQ==" length="448561478"
       />
     </item>
 
