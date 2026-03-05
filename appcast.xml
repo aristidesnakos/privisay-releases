@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.03.01</title>
-      <pubDate>Sun, 01 Mar 2026 11:24:12 +0200</pubDate>
-      <sparkle:version>44</sparkle:version>
-      <sparkle:shortVersionString>2026.03.01</sparkle:shortVersionString>
+      <title>Version 2026.03.05</title>
+      <pubDate>Thu, 05 Mar 2026 14:26:32 +0200</pubDate>
+      <sparkle:version>48</sparkle:version>
+      <sparkle:shortVersionString>2026.03.05</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,18 +19,20 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.03.01</h3>
+        <h3>What's New in 2026.03.05</h3>
         <ul>
           <li>Expanded voice commands — 30+ new spoken formatting commands for hands-free text control:</li>
+          <li>New line insertion — "new line" now creates an actual line break in all apps including browsers, VS Code, and Electron apps (previously sent a raw Unicode character that many apps ignored)</li>
+          <li>Tab insertion — "tab" now sends a real Tab keypress for proper indentation</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.01/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.05/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="LMPXbe6sCYqebGptGXnW6tw5eXn70T2I+a5fmIViA3RVgMydvU8P6nP6iJC4H9hJQoJLj0BJ3w64+m0ylRGWBg==" length="448560227"
+        sparkle:edSignature="m0LjbgbL0S48kJwtZgiaG875DXEB0lNvpTSljUT4fFiSmy0g53nKXbxPtnhAQyjhYE4lH1FGX3XKsuJooVNGAw==" length="448561087"
       />
     </item>
 
