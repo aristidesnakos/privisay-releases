@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.03.06</title>
-      <pubDate>Thu, 05 Mar 2026 15:42:35 +0200</pubDate>
-      <sparkle:version>51</sparkle:version>
-      <sparkle:shortVersionString>2026.03.06</sparkle:shortVersionString>
+      <title>Version 2026.03.07</title>
+      <pubDate>Fri, 06 Mar 2026 20:18:25 +0200</pubDate>
+      <sparkle:version>54</sparkle:version>
+      <sparkle:shortVersionString>2026.03.07</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,22 +19,19 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.03.06</h3>
+        <h3>What's New in 2026.03.07</h3>
         <ul>
-          <li>Expanded voice commands — 30+ new spoken formatting commands for hands-free text control:</li>
-          <li>New line insertion — "new line" now creates an actual line break in all apps including browsers, VS Code, and Electron apps (previously sent a raw Unicode character that many apps ignored)</li>
-          <li>Tab insertion — "tab" now sends a real Tab keypress for proper indentation</li>
-          <li>Whisper punctuation around voice commands — Whisper auto-inserts commas/periods around spoken commands (e.g. "Hello, new line. How are you?"); these are now stripped so you get clean output without stray punctuation</li>
-          <li>Soft line breaks — "new line" now sends Shift+Return (soft line break) keeping text as one continuous block rather than splitting into separate paragraphs</li>
+          <li>Upgraded transcription model to Whisper medium — replaces the previous `small` model with `medium` (~1.5 GB), yielding significantly better accuracy for multilingual users. Eval across English, Greek, Spanish, and Japanese recordings showed average WER drop from 8% → 2%, with Greek improving by ~26% WER (previously producing garbled output on common words). English and Japanese remain at 0% WER.</li>
+          <li>Disabled timestamp tokens during decoding (`withoutTimestamps: true`) — removes timestamp-token interference from the decode sequence, improving word-boundary accuracy across all models.</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.06/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.07/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="38O5iyQriYU0I4772YhVVP0TX5hOvqQKc+DL6k/ixgmb85NLCrWQporUAZjU5Y3pwg5MbIMQ9bsxb5/D3cUKBQ==" length="448561478"
+        sparkle:edSignature="6Xy8DUitCihvzoZGpJ2aGn1FeC7nVvc1pCo6Ke8J6hZivEmFdBagdAfxozxVYcwve27RTN0bu3oahhaA1x0eBA==" length="1861214977"
       />
     </item>
 
