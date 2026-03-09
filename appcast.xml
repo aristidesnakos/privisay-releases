@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.03.07</title>
-      <pubDate>Fri, 06 Mar 2026 20:18:25 +0200</pubDate>
-      <sparkle:version>54</sparkle:version>
-      <sparkle:shortVersionString>2026.03.07</sparkle:shortVersionString>
+      <title>Version 2026.03.09</title>
+      <pubDate>Mon, 09 Mar 2026 19:07:40 +0200</pubDate>
+      <sparkle:version>61</sparkle:version>
+      <sparkle:shortVersionString>2026.03.09</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,19 +19,18 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.03.07</h3>
+        <h3>What's New in 2026.03.09</h3>
         <ul>
-          <li>Upgraded transcription model to Whisper medium — replaces the previous `small` model with `medium` (~1.5 GB), yielding significantly better accuracy for multilingual users. Eval across English, Greek, Spanish, and Japanese recordings showed average WER drop from 8% → 2%, with Greek improving by ~26% WER (previously producing garbled output on common words). English and Japanese remain at 0% WER.</li>
-          <li>Disabled timestamp tokens during decoding (`withoutTimestamps: true`) — removes timestamp-token interference from the decode sequence, improving word-boundary accuracy across all models.</li>
+          <li>Preferences — Dropped the display of the model. Redundant information for the end user.</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.07/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.09/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="6Xy8DUitCihvzoZGpJ2aGn1FeC7nVvc1pCo6Ke8J6hZivEmFdBagdAfxozxVYcwve27RTN0bu3oahhaA1x0eBA==" length="1861214977"
+        sparkle:edSignature="qlvsq8EhdM0OsCRa2LrPD57WKfClfai6QtauKA7x/nar381RNcz3PUXfieeP7Cq4KXtvT5R6Pct4/FxkeNSiDw==" length="1415425319"
       />
     </item>
 
