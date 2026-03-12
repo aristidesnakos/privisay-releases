@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.03.11</title>
-      <pubDate>Wed, 11 Mar 2026 14:37:40 -0400</pubDate>
-      <sparkle:version>64</sparkle:version>
-      <sparkle:shortVersionString>2026.03.11</sparkle:shortVersionString>
+      <title>Version 2026.03.12</title>
+      <pubDate>Wed, 11 Mar 2026 21:48:20 -0400</pubDate>
+      <sparkle:version>66</sparkle:version>
+      <sparkle:shortVersionString>2026.03.12</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,23 +19,20 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.03.11</h3>
+        <h3>What's New in 2026.03.12</h3>
         <ul>
-          <li>Streaming: final phrase capture on stop — increased post-stop grace period from 100ms to 500ms and deferred the `isStreaming` flag so late-arriving callbacks can still deliver text. Added a `lastFullText` diff fallback for edge cases where hypothesis is cleared before capture.</li>
-          <li>Streaming: final words now insert at correct cursor position — when pressing the hotkey to stop streaming, the remaining hypothesis text was being typed into whatever app had focus instead of the original target. Focus is now restored before the final insertion, matching batch mode behavior.</li>
-          <li>Streaming: last words no longer dropped on stop — replaced fragile `Task.yield()` callback flushing with a reliable 100ms async sleep, giving WhisperKit time to deliver its final transcription pass before reading the result.</li>
-          <li>Double punctuation from voice commands — Whisper auto-inserts punctuation (e.g., a comma after "Regards") and spoken voice commands like "comma" produced a second one. Duplicate adjacent punctuation marks are now collapsed (language-agnostic).</li>
-          <li>Capitalization after "new line" — voice commands inject `\n` which broke Whisper's natural capitalization. The first letter of each line is now capitalized automatically (no-op for scripts without case like CJK).</li>
-          <li>Auto-period on transcription output — previously force-added a trailing period to text that didn't end with punctuation. This fought Whisper's own punctuation and wrongly added periods to names and signatures. Whisper handles sentence punctuation natively.</li>
+          <li>Whisper hallucination filtering — foreign-language text (e.g., Korean "감사합니다!") no longer appended to English batch transcriptions. Added trailing foreign-script detection that strips text when the dominant script is >70% of output.</li>
+          <li>Streaming artifacts removed — `[ Silence ]` and `[ Inaudible ]` markers no longer inserted at the cursor during streaming. Both real-time deltas and stop-time hypothesis text now pass through artifact removal.</li>
+          <li>Tighter batch decoding thresholds — added `compressionRatioThreshold: 1.8` to batch mode (matching streaming), catching repetitive hallucinations at the WhisperKit level.</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.11/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.12/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="3WZkl/0n5bVW7GDwK/KoxpwpMlRJIy0sfcXjtCyTIcytrg8FiLSdjykI9p9i89hJShxbCFKJfsrj2/ms1pqQDg==" length="1415428801"
+        sparkle:edSignature="j7Smjf2rJ1q91xtNY5zvT4qbt7K6hKK6tIWIaJfg3FC0iL9cAiXe+0HPaqQuGZ5OhQ/UmXsYgjMs5gCxdyOcCg==" length="1415432418"
       />
     </item>
 
