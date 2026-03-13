@@ -8,8 +8,8 @@
 
     <item>
       <title>Version 2026.03.12</title>
-      <pubDate>Wed, 11 Mar 2026 21:48:20 -0400</pubDate>
-      <sparkle:version>66</sparkle:version>
+      <pubDate>Fri, 13 Mar 2026 00:49:35 -0400</pubDate>
+      <sparkle:version>67</sparkle:version>
       <sparkle:shortVersionString>2026.03.12</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
@@ -32,7 +32,7 @@
       <enclosure
         url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.12/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="j7Smjf2rJ1q91xtNY5zvT4qbt7K6hKK6tIWIaJfg3FC0iL9cAiXe+0HPaqQuGZ5OhQ/UmXsYgjMs5gCxdyOcCg==" length="1415432418"
+        sparkle:edSignature="UM9G4KjoddK8SepfvkbcqOp6+uGGCMddegN//XrQTuRutnJYNjskiTW/fpsMieP/QFJeKs9G8Vx2kh3BQVqKAg==" length="1415432885"
       />
     </item>
 
