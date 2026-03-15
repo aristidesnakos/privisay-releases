@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.03.12</title>
-      <pubDate>Fri, 13 Mar 2026 00:49:35 -0400</pubDate>
-      <sparkle:version>67</sparkle:version>
-      <sparkle:shortVersionString>2026.03.12</sparkle:shortVersionString>
+      <title>Version 2026.03.14</title>
+      <pubDate>Sat, 14 Mar 2026 20:43:14 -0400</pubDate>
+      <sparkle:version>70</sparkle:version>
+      <sparkle:shortVersionString>2026.03.14</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,20 +19,21 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.03.12</h3>
+        <h3>What's New in 2026.03.14</h3>
         <ul>
-          <li>Whisper hallucination filtering — foreign-language text (e.g., Korean "감사합니다!") no longer appended to English batch transcriptions. Added trailing foreign-script detection that strips text when the dominant script is >70% of output.</li>
-          <li>Streaming artifacts removed — `[ Silence ]` and `[ Inaudible ]` markers no longer inserted at the cursor during streaming. Both real-time deltas and stop-time hypothesis text now pass through artifact removal.</li>
-          <li>Tighter batch decoding thresholds — added `compressionRatioThreshold: 1.8` to batch mode (matching streaming), catching repetitive hallucinations at the WhisperKit level.</li>
+          <li>Voice commands: punctuation no longer leaves artifacts — spoken commands like "period" and "comma" now consume adjacent Whisper-added punctuation. Previously "I will be there, period." left a dangling comma; now it produces clean "I will be there."</li>
+          <li>Voice commands: duplicate punctuation fully collapsed — the dedup regex now handles 3+ repeated punctuation marks (e.g. `. ..` → `.`), not just pairs.</li>
+          <li>Voice commands: "open/close parentheses" now recognized — Whisper transcribes the plural form; added "parentheses" as a variant alongside "parenthesis".</li>
+          <li>Command eval: 19/19 cases passing — end-to-end eval (audio → Whisper → formatText) improved from 7/21 (33%) to 19/19 (100%). Updated expected values to match real Whisper output and removed 2 cases where Whisper can't reliably preserve the spoken command (em dash, at sign).</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.12/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.14/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="UM9G4KjoddK8SepfvkbcqOp6+uGGCMddegN//XrQTuRutnJYNjskiTW/fpsMieP/QFJeKs9G8Vx2kh3BQVqKAg==" length="1415432885"
+        sparkle:edSignature="mQQxBJrjXNfebXnSTv2LfDE1WqxccZOqhp/yAlF9Pdbc13sL57A5W/TaTKXo7fzrJOklcz2l//+SDmtL0kwgDg==" length="1415428843"
       />
     </item>
 
