@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.03.17</title>
-      <pubDate>Tue, 17 Mar 2026 22:05:35 +0200</pubDate>
-      <sparkle:version>72</sparkle:version>
-      <sparkle:shortVersionString>2026.03.17</sparkle:shortVersionString>
+      <title>Version 2026.03.19</title>
+      <pubDate>Thu, 19 Mar 2026 06:04:29 +0200</pubDate>
+      <sparkle:version>75</sparkle:version>
+      <sparkle:shortVersionString>2026.03.19</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,19 +19,19 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.03.17</h3>
+        <h3>What's New in 2026.03.19</h3>
         <ul>
-          <li>Streaming: hypothesis instrumentation (debug builds only) — tracks first-hypothesis timing, growth direction, peak text, and hypothesis-vs-confirmed comparison to guide latency improvements</li>
-          <li>Streaming: grow-only dry-run simulation (debug builds only) — simulates what a grow-only hypothesis insertion strategy would produce at the cursor, logging word-match accuracy against confirmed text at stop time</li>
+          <li>Upgraded transcription model to Whisper large-v3-turbo — replaces `medium` (769M params) with `openai_whisper-large-v3_turbo_954MB` (809M params, QLoRA compressed). The turbo architecture keeps the full large-v3 encoder but slashes the decoder from 24 layers to 4, enabling future streaming support. Eval results across 12 languages: average WER dropped from 7% to 4% (−43%). Biggest wins: Portuguese 6.5% → 0%, Hindi 39% → 19%, Arabic 12% → 6.5%. Runs at the same speed as medium on ANE (5.5s vs 5.1s avg). Download size is smaller (954 MB vs ~1.5 GB).</li>
+          <li>EvalRunner: `--ane` flag — forces Neural Engine for encoder compute, overriding the default CPU+GPU fallback for large-prefix models. Used to validate that turbo runs correctly on ANE.</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.17/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.19/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="WR98zX7V6kEa/Z6XuvfBs35ircFiYuOGqFtFZItFUOMmjyg9dH5ZUjvaa/7rvsdUE+amgpIGt63rIsUqHHkCAQ==" length="1415431888"
+        sparkle:edSignature="HIHxNycyjmyKTQRv4wZ0Z+9Z9vUc9sh49LhlozFlAbxe75LSJoQuUHIyH9y43GWh2oUey9q7vzDUYVNLeGOzBQ==" length="1415412804"
       />
     </item>
 
