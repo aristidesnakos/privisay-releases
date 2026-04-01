@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.04.01</title>
-      <pubDate>Wed, 01 Apr 2026 13:33:41 +0300</pubDate>
-      <sparkle:version>88</sparkle:version>
-      <sparkle:shortVersionString>2026.04.01</sparkle:shortVersionString>
+      <title>Version 2026.04.02</title>
+      <pubDate>Wed, 01 Apr 2026 14:10:03 +0300</pubDate>
+      <sparkle:version>89</sparkle:version>
+      <sparkle:shortVersionString>2026.04.02</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,18 +19,18 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.04.01</h3>
+        <h3>What's New in 2026.04.02</h3>
         <ul>
-          <li>Time Saved chart hover tooltips — hovering over bars in the Time Saved chart now displays the time saved for that day/period in a floating label</li>
+          <li>Time Saved chart hover tooltips — hovering over bars in the Time Saved chart displays the time saved for that day/period in a floating label. Label uses SF Rounded typography with `.ultraThinMaterial` background and rounded corners. Overflow resolution keeps labels in view on chart edges.</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.04.01/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.04.02/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="0mgsHVvlb/WSdX9fvvU+MLpdLmZquYSgKxPZ73B7KM3YEQUPLqBXIkXzPRFN4AumJCrygPH+8bcoiUBvgC53Cg==" length="2764702"
+        sparkle:edSignature="FN1RnP29PY4SftRzKSyQMEipTWXGUCe3qG1onUW4P8nT4b4aNlKiDiCvkrlJ8VIkOAYcvRvhsU158XTMu/q8DA==" length="2764683"
       />
     </item>
 
