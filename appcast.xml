@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.03.30</title>
-      <pubDate>Mon, 30 Mar 2026 14:21:17 +0300</pubDate>
-      <sparkle:version>84</sparkle:version>
-      <sparkle:shortVersionString>2026.03.30</sparkle:shortVersionString>
+      <title>Version 2026.04.01</title>
+      <pubDate>Wed, 01 Apr 2026 13:25:57 +0300</pubDate>
+      <sparkle:version>86</sparkle:version>
+      <sparkle:shortVersionString>2026.04.01</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,18 +19,18 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.03.30</h3>
+        <h3>What's New in 2026.04.01</h3>
         <ul>
-          <li>Smart Formatting (macOS 26+) — opt-in toggle in Preferences that uses Apple's on-device Foundation Models to intelligently format transcribed speech. Adds proper punctuation, capitalization, paragraph breaks at topic changes, list formatting, filler word removal, and self-correction handling — no voice commands needed. Requires Apple Intelligence to be enabled. Falls back to the standard formatting pipeline on error. Streaming mode is automatically paused while Smart Formatting is active.</li>
+          <li>Time Saved chart hover tooltips — hovering over bars in the Time Saved chart now displays the time saved for that day/period in a floating label</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.03.30/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.04.01/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="hZGm9tKZ5+yTvO7gqxKLwEVa+qNMSzqaNy3GWeAn8+aG74kStjpXqGelKX+SuNSe09LbnzsASRmLKRJMRvdgAQ==" length="2787945"
+        sparkle:edSignature="8YrFjMnbWQSUgcAD0K7OkZtOcW3raDkjWUdXFv1qEeqrnOUPfUn8HX+pcNU8NOPvY4S6q5K3jS1fnP8HJtnvCg==" length="2764408"
       />
     </item>
 
