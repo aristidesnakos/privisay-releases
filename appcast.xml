@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.06.25</title>
-      <pubDate>Wed, 24 Jun 2026 15:44:52 +0300</pubDate>
-      <sparkle:version>112</sparkle:version>
-      <sparkle:shortVersionString>2026.06.25</sparkle:shortVersionString>
+      <title>Version 2026.06.26</title>
+      <pubDate>Wed, 24 Jun 2026 19:37:46 +0200</pubDate>
+      <sparkle:version>113</sparkle:version>
+      <sparkle:shortVersionString>2026.06.26</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,18 +19,18 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.06.25</h3>
+        <h3>What's New in 2026.06.26</h3>
         <ul>
-          <li>Time Saved window redesign — a cleaner, Health-style layout. One big hero total for the period you're viewing now leads the window, with a momentum trend pill showing how you're tracking. The bar chart highlights the current period, marks your average with a dashed baseline, and is scrubbable — drag across it to read any day. This fixes the previous layout's quirks (Today shown three times, an inverted size hierarchy, and x-axis labels that were invisible in light mode), and bars now announce above/below average for VoiceOver. The Time / $ toggle moved up to the period control row.</li>
+          <li>Time Saved window — per-bar value labels at rest (10pt bold, inside tall bars / above short ones); hover over any bar for a floating tooltip. Footer replaced with a prominent Today and All-time totals section. Switched scrub interaction from drag-gesture overlay to `chartXSelection` (cleaner hover on macOS).</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.06.25/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.06.26/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="FZptWeLHbliwL8T2agGQejzK6cnMEQjFSm08d3BCBZF2t0DdwngHRHMUn6O7gdB4kRZFL7yL9UXE8bCsRGwiDQ==" length="1415509703"
+        sparkle:edSignature="3UAtdO2PQ9hEs8L1SMshsX2/Yms7sKRfFS0GPmJLo3IFB2ZQELeDx4pMReUmhDQ0rnwFy+TFRQW3REuyApgODA==" length="1415509718"
       />
     </item>
 
