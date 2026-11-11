@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.11.11</title>
-      <pubDate>Wed, 11 Nov 2026 10:50:53 +0200</pubDate>
-      <sparkle:version>116</sparkle:version>
-      <sparkle:shortVersionString>2026.11.11</sparkle:shortVersionString>
+      <title>Version 1.315.0</title>
+      <pubDate>Wed, 11 Nov 2026 13:57:19 +0200</pubDate>
+      <sparkle:version>120</sparkle:version>
+      <sparkle:shortVersionString>1.315.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,21 +19,18 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.11.11</h3>
+        <h3>What's New in 1.315.0</h3>
         <ul>
-          <li>Languages you dictate in — Preferences now holds a short list of your languages instead of one fixed language or "Auto-detect". Each recording is matched to one of *your* languages only, so a short English sentence can no longer come out as Korean or Dutch. The first language is your primary: recordings under a second, or ones where another language isn't clearly ahead, use it. The list starts from your macOS languages (System Settings → Language & Region), so most people never touch it; with one language every recording uses it, the most accurate setting. A language you had picked in the old menu carries over. Remove every language to let Whisper detect any language, as before.</li>
-          <li>Garbled dictation with missing sounds — the microphone's 48 kHz audio was resampled to 16 kHz with a broken streaming pattern that duplicated and dropped slivers of audio, erasing short sounds like consonants. How bad it got depended on the buffer sizes the Mac delivered, so it came and went. Each buffer is now handed to the converter exactly once and drained fully, and the converter starts fresh every recording. Offline, the new path is sample-identical to a one-shot conversion at every buffer size tested.</li>
-          <li>Last word cut off on a manual stop — audio buffers still waiting on the main thread were discarded when recording stopped. Capture now runs on its own serial queue; stopping waits for queued buffers and flushes the resampler's tail before transcription.</li>
-          <li>Audio conversion, level metering and silence detection moved off the main thread. Silence auto-stop is now timed in audio frames instead of wall-clock time.</li>
+          <li>Hold Fn to dictate — hold the Fn (🌐) key, talk, and let go to insert the text; no more pauses ending a recording early. ⌘⇧Space still works as before. Fn pressed together with another key (Fn+←, Fn+F1) is left alone, and a press too short to hold a word is ignored. It needs Accessibility access, which priviSay already asks for to type at your cursor; it only watches the Fn key. If your 🌐 key is set to show emoji or switch input source, Preferences offers to change that, since macOS would also do it each time you let go. Turn it off in Preferences. Fn doesn't reach macOS on many non-Apple keyboards; use ⌘⇧Space there.</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.11.11/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v1.315.0/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="QaecVzyG6NhT7ZNNLpmpmjxPglHG7HaqJrAiOxj9mGWoKo57lnIxovGe8PW43hJChP1sTcJ1/7TqvetEjiH9Dw==" length="1415532378"
+        sparkle:edSignature="/QAkWgq7ed5R0/6l6mAiXkRbrKgjNIcvsOjb5IYownuDK+R7TEgo7gMmHgaA/+tAqsNy/z+4XuA5eRd1BUQZBA==" length="1415552550"
       />
     </item>
 
