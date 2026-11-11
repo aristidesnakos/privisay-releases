@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 1.315.0</title>
-      <pubDate>Wed, 11 Nov 2026 13:57:19 +0200</pubDate>
-      <sparkle:version>120</sparkle:version>
-      <sparkle:shortVersionString>1.315.0</sparkle:shortVersionString>
+      <title>Version 1.315.1</title>
+      <pubDate>Wed, 11 Nov 2026 19:54:20 +0200</pubDate>
+      <sparkle:version>122</sparkle:version>
+      <sparkle:shortVersionString>1.315.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,18 +19,18 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 1.315.0</h3>
+        <h3>What's New in 1.315.1</h3>
         <ul>
-          <li>Hold Fn to dictate — hold the Fn (🌐) key, talk, and let go to insert the text; no more pauses ending a recording early. ⌘⇧Space still works as before. Fn pressed together with another key (Fn+←, Fn+F1) is left alone, and a press too short to hold a word is ignored. It needs Accessibility access, which priviSay already asks for to type at your cursor; it only watches the Fn key. If your 🌐 key is set to show emoji or switch input source, Preferences offers to change that, since macOS would also do it each time you let go. Turn it off in Preferences. Fn doesn't reach macOS on many non-Apple keyboards; use ⌘⇧Space there.</li>
+          <li>Microphone choice, with Automatic detection — priviSay used to listen only to the input macOS had set as its default, so a USB mic that was plugged in but not the default (a wireless-mic receiver, say) was never heard. Preferences now has a Microphone setting. **Automatic** (the default) listens on every connected built-in and USB microphone while you dictate and keeps the recording from the one that heard you; auto-stop waits until all of them are quiet. Bluetooth headsets, virtual devices and your iPhone are left out of the race, since opening a Bluetooth headset as a mic drops its sound quality; a Bluetooth headset that is your Mac's input still works. **System default** keeps the old behaviour, and you can also pin one named microphone (if it is unplugged, priviSay falls back to Automatic). Preferences shows which mic the last dictation used. With only one microphone connected nothing changes.</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v1.315.0/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v1.315.1/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="/QAkWgq7ed5R0/6l6mAiXkRbrKgjNIcvsOjb5IYownuDK+R7TEgo7gMmHgaA/+tAqsNy/z+4XuA5eRd1BUQZBA==" length="1415552550"
+        sparkle:edSignature="iviPBnnWbNE5+8cqjNqtQzKv2il/iJYWMGfANJmS+Zf6av7rfFwum+F2/qoBzQelPDjTWl/4byYQSK2kazLxCA==" length="1415582437"
       />
     </item>
 
