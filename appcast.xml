@@ -7,10 +7,10 @@
     <language>en</language>
 
     <item>
-      <title>Version 2026.06.26</title>
-      <pubDate>Wed, 24 Jun 2026 19:37:46 +0200</pubDate>
-      <sparkle:version>113</sparkle:version>
-      <sparkle:shortVersionString>2026.06.26</sparkle:shortVersionString>
+      <title>Version 2026.11.11</title>
+      <pubDate>Wed, 11 Nov 2026 10:50:53 +0200</pubDate>
+      <sparkle:version>116</sparkle:version>
+      <sparkle:shortVersionString>2026.11.11</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <style>
@@ -19,18 +19,21 @@
           ul { margin: 0; padding-left: 20px; }
           li { margin: 6px 0; }
         </style>
-        <h3>What's New in 2026.06.26</h3>
+        <h3>What's New in 2026.11.11</h3>
         <ul>
-          <li>Time Saved window — per-bar value labels at rest (10pt bold, inside tall bars / above short ones); hover over any bar for a floating tooltip. Footer replaced with a prominent Today and All-time totals section. Switched scrub interaction from drag-gesture overlay to `chartXSelection` (cleaner hover on macOS).</li>
+          <li>Languages you dictate in — Preferences now holds a short list of your languages instead of one fixed language or "Auto-detect". Each recording is matched to one of *your* languages only, so a short English sentence can no longer come out as Korean or Dutch. The first language is your primary: recordings under a second, or ones where another language isn't clearly ahead, use it. The list starts from your macOS languages (System Settings → Language & Region), so most people never touch it; with one language every recording uses it, the most accurate setting. A language you had picked in the old menu carries over. Remove every language to let Whisper detect any language, as before.</li>
+          <li>Garbled dictation with missing sounds — the microphone's 48 kHz audio was resampled to 16 kHz with a broken streaming pattern that duplicated and dropped slivers of audio, erasing short sounds like consonants. How bad it got depended on the buffer sizes the Mac delivered, so it came and went. Each buffer is now handed to the converter exactly once and drained fully, and the converter starts fresh every recording. Offline, the new path is sample-identical to a one-shot conversion at every buffer size tested.</li>
+          <li>Last word cut off on a manual stop — audio buffers still waiting on the main thread were discarded when recording stopped. Capture now runs on its own serial queue; stopping waits for queued buffers and flushes the resampler's tail before transcription.</li>
+          <li>Audio conversion, level metering and silence detection moved off the main thread. Silence auto-stop is now timed in audio frames instead of wall-clock time.</li>
         </ul>
         <p style="margin-top: 12px; color: #666; font-size: 12px;">
           All transcription happens 100% locally on your device.
         </p>
       ]]></description>
       <enclosure
-        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.06.26/priviSay.zip"
+        url="https://github.com/aristidesnakos/privisay-releases/releases/download/v2026.11.11/priviSay.zip"
         type="application/octet-stream"
-        sparkle:edSignature="3UAtdO2PQ9hEs8L1SMshsX2/Yms7sKRfFS0GPmJLo3IFB2ZQELeDx4pMReUmhDQ0rnwFy+TFRQW3REuyApgODA==" length="1415509718"
+        sparkle:edSignature="QaecVzyG6NhT7ZNNLpmpmjxPglHG7HaqJrAiOxj9mGWoKo57lnIxovGe8PW43hJChP1sTcJ1/7TqvetEjiH9Dw==" length="1415532378"
       />
     </item>
 
